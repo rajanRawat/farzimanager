@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Farzi Manager</title>
+    <meta name="description" content="Farzi Manager — simple links to our channels" />
+    <link rel="canonical" href="https://farzimanager.example/" />
+    <meta name="theme-color" content="#f6f6f6" />
+
+    <!-- Favicon / Icons -->
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Farzi Manager" />
+    <meta property="og:title" content="Farzi Manager" />
+    <meta property="og:description" content="Pencil‑sketched simplicity. Connect on LinkedIn, Substack, Instagram, and YouTube." />
+    <meta property="og:url" content="https://farzimanager.example/" />
+    <meta property="og:image" content="assets/cover.png" />
+    <meta property="og:image:alt" content="Farzi Manager cover" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Farzi Manager" />
+    <meta name="twitter:description" content="Pencil‑sketched simplicity. Connect on LinkedIn, Substack, Instagram, and YouTube." />
+    <meta name="twitter:image" content="assets/cover.png" />
+    <meta name="twitter:image:alt" content="Farzi Manager cover" />
+    <link rel="preload" as="image" href="assets/cover.png" />
+    <link rel="preload" as="image" href="assets/cover.svg" />
+    <link rel="preload" as="image" href="assets/logo.png" />
+    <link rel="preload" as="image" href="assets/logo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="cover">
+        <picture>
+          <img src="assets/cover.png" alt="Farzi Manager cover" onerror="this.src='assets/cover.svg'" />
+        </picture>
+      </div>
+      <div class="brand">
+        <div class="logo-wrap">
+          <picture>
+            <img class="logo" src="assets/logo.png" alt="Farzi Manager logo" onerror="this.src='assets/logo.svg'" />
+          </picture>
+        </div>
+        <h1>Farzi Manager</h1>
+      </div>
+    </header>
+
+    <main id="main" class="links" role="main">
+      <a class="card linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M4.98 3.5C4.98 4.6 4.1 5.5 3 5.5S1 4.6 1 3.5 1.9 1.5 3 1.5s1.98.9 1.98 2zM1 8h4v12H1zM8 8h3.7v1.6h.05c.51-.96 1.76-1.97 3.63-1.97 3.88 0 4.6 2.56 4.6 5.9V20H16v-5.4c0-1.3-.02-3-1.85-3-1.86 0-2.15 1.4-2.15 2.9V20H8z"/>
+        </svg>
+        <span class="card-title">LinkedIn</span>
+        <span class="card-sub">Connect professionally</span>
+      </a>
+      <a class="card substack" href="https://substack.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Substack">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <rect width="24" height="24" rx="4" fill="#ffffff"/>
+          <path fill="currentColor" d="M5 5h14v2H5V5Zm0 3h14v2H5V8Zm7 9L5 13v6l7-2.8L19 19v-6l-7 4Z"/>
+        </svg>
+        <span class="card-title">Substack</span>
+        <span class="card-sub">Read the essays</span>
+      </a>
+      <a class="card instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <rect width="24" height="24" rx="4" fill="#ffffff"/>
+          <path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4ZM17.2 6.8a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4ZM7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Z"/>
+        </svg>
+        <span class="card-title">Instagram</span>
+        <span class="card-sub">Sketches & snippets</span>
+      </a>
+      <a class="card youtube" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit YouTube">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <rect width="24" height="24" rx="4" fill="#ffffff"/>
+          <path fill="currentColor" d="M22 12c0 2.2-.2 3.7-.5 4.6-.2.6-.7 1.1-1.3 1.3-1 .3-6.2.3-6.2.3s-5.2 0-6.2-.3c-.6-.2-1.1-.7-1.3-1.3C6.2 15.7 6 14.2 6 12s.2-3.7.5-4.6c.2-.6.7-1.1 1.3-1.3C8.8 5.8 14 5.8 14 5.8s5.2 0 6.2.3c.6.2 1.1.7 1.3 1.3.3.9.5 2.4.5 4.6ZM10.8 15.1l4.2-2.4-4.2-2.4v4.8Z"/>
+        </svg>
+        <span class="card-title">YouTube</span>
+        <span class="card-sub">Watch videos</span>
+      </a>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <small>© <span id="year"></span> Farzi Manager</small>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      // No script overrides for cover color to avoid mismatches
+    </script>
+  </body>
+  </html>
+
+
